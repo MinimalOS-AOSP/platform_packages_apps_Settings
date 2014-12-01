@@ -95,5 +95,7 @@
     <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
     <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
 
+    <!-- RAM: Memory Info -->
+    <string name="mem_info">RAM</string>
 </resources>
 
