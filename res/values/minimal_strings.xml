@@ -15,6 +15,7 @@
     <string name="volume_rocker_screen_title">Volume rocker</string>
     <string name="battery_title">Battery</string>
     <string name="battery2_summary">Customize battery icons and percentage</string>
+    <string name="recents_panel_settings">Recent apps settings</string>
 
     <!-- Double tap to sleep on navigation bar -->
     <string name="double_tap_sleep_nav_bar_title">Double tap to sleep</string>
@@ -223,4 +224,9 @@
     <string name="picker_activities">Activities</string>
     <string name="select_custom_app_title">Select custom app</string>
     <string name="select_custom_activity_title">Select custom activity</string>
+
+    <!-- Show/Hide Search Bar -->
+    <string name="recents_show_searchbar">Enable search bar in recents menu</string>
+    <string name="recents_show_searchbar_summary">Enable/disable the search bar in the recents menu</string>
+
 </resources>

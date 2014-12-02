@@ -9,4 +9,10 @@
          android:summary="@string/double_tap_sleep_nav_bar_summary"
          android:defaultValue="false" />
 
+	<com.android.settings.minimal.preference.SystemSettingSwitchPreference
+        android:key="recents_show_search_bar"
+        android:title="@string/recents_show_searchbar"
+        android:summary="@string/recents_show_searchbar_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
