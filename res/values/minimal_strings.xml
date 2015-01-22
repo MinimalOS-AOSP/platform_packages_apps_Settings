@@ -25,5 +25,9 @@
     <string name="changelog_crdroid_title">Changelog</string>
     <string name="changelog_crdroid_error">Unable to load changelog</string>
 
+    <!-- Devices and Maintainers -->
+    <string name="device_maintainers_title">Devices and Maintainers</string>
+    <string name="device_maintainers_title_summary">List of Supported devices by MinimalOS maintainers</string>
+
 </resources>
 
