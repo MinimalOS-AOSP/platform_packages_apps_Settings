@@ -64,6 +64,22 @@
     <string name="display_rotation_180_title">180 degrees</string>
     <string name="display_rotation_270_title">270 degrees</string>
 
+    <!-- About MinimalOS -->
+    <string name="about_crdroid">About MinimalOS</string>
+
+    <!-- Share MinimalOS -->
+    <string name="share_crdroid_title">Share MinimalOS</string>
+    <string name="share_crdroid_summary">Let others know about MinimalOS</string>
+    <string name="share_message">Check out what #MinimalOS is all about @ https://plus.google.com/u/0/communities/113231455842300304229</string>
+    <string name="share_chooser_title">Share MinimalOS</string>
+
+    <!-- Sites Minimal OS -->
+    <string name="sites_crdroid">Useful links</string>
+    <string name="crdroid_source_title">Github</string>
+    <string name="crdroid_source_summary">Checkout the ROM\'s source</string>
+    <string name="crdroid_google_plus_title">Google+</string>
+    <string name="crdroid_google_plus_summary">Visit our G+ page for support and news</string>
+
     <!-- RAM: Memory Info -->
     <string name="mem_info">RAM</string>
 

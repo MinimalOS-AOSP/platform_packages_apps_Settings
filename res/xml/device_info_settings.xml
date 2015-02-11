@@ -17,6 +17,11 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/about_settings">
 
+        <!-- About Minimal -->
+        <PreferenceScreen android:key="about"
+                android:title="@string/about_crdroid"
+                android:fragment="com.android.settings.crdroid.About" />
+				
         <!-- Changelog -->
         <PreferenceScreen android:key="changelog"
                 android:title="@string/changelog_title"
