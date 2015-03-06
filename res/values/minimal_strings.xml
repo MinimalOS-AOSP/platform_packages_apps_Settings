@@ -152,5 +152,8 @@
     <string name="empty_string">Empty</string>
     <string name="font_size_sample">Sample</string>
     <string name="attention">Attention</string>
+
+    <!--  BitSyko Layers header name -->
+    <string name="bitsyko_layers">Layers</string>
 </resources>
 
