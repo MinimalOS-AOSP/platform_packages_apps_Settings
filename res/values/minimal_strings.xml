@@ -14,6 +14,10 @@
     <string name="power_menu_title">Power menu</string>
     <string name="volume_rocker_screen_title">Volume rocker</string>
 
+    <!-- Double tap to sleep on navigation bar -->
+    <string name="double_tap_sleep_nav_bar_title">Double tap to sleep</string>
+    <string name="double_tap_sleep_nav_bar_summary">Double tap navigation bar to put the device to sleep</string>
+
     <!-- About phone screen, build date of ROM -->
     <string name="build_date">ROM build date</string>
     <string name="build_date_default">2015-10-05-0000</string>
