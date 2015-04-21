@@ -44,6 +44,11 @@
 
     <!-- About phone screen, processor info label  [CHAR LIMIT=40] -->
     <string name="processor_info">Processor</string>
+    
+    <!-- About phone screen, Device model -->
+    <string name="device_model">Device model</string>
+    <!-- About phone screen, Device name -->
+    <string name="device_name">Device name</string>
 
 </resources>
 
