@@ -203,6 +203,7 @@
     <string name="notification_light_missed_call_title">Missed call</string>
     <string name="notification_light_voicemail_title">Voicemail</string>
     <string name="notification_light_screen_on">Lights with screen on</string>
+    <string name="allow_lights_title">Allow notification lights in do not disturb mode</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
@@ -214,4 +215,3 @@
     <string name="set">Set</string>
     <string name="color_default">Default</string>
 </resources>
-
