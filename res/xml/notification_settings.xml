@@ -101,6 +101,14 @@
                 android:key="notification_pulse"
                 android:title="@string/notification_pulse_title"
                 android:persistent="false" />
+                
+        <!-- Charging Battery Light -->
+        <SwitchPreference
+                android:key="charging_led"
+                android:title="@string/charging_led_title"
+                android:switchTextOff=""
+                android:switchTextOn=""
+                android:persistent="false" />                
 
          <!-- When device is locked -->
         <com.android.settings.DropDownPreference

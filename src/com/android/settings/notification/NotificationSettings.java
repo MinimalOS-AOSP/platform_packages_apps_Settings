@@ -64,6 +64,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
+import java.io.BufferedReader;
+import java.io.FileReader;
 
 public class NotificationSettings extends SettingsPreferenceFragment implements Indexable {
     private static final String TAG = "NotificationSettings";
@@ -79,6 +81,7 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
     private static final String KEY_WIFI_DISPLAY = "wifi_display";
     private static final String KEY_NOTIFICATION = "notification";
     private static final String KEY_NOTIFICATION_PULSE = "notification_pulse";
+    private static final String KEY_CHARGING_LED = "charging_led";
     private static final String KEY_LOCK_SCREEN_NOTIFICATIONS = "lock_screen_notifications";
     private static final String KEY_NOTIFICATION_ACCESS = "manage_notification_access";
     private static final String KEY_ZEN_ACCESS = "manage_zen_access";
@@ -112,6 +115,7 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
     private Preference mNotificationRingtonePreference;
     private TwoStatePreference mVibrateWhenRinging;
     private TwoStatePreference mNotificationPulse;
+    private TwoStatePreference mChargingLed;
     private DropDownPreference mLockscreen;
     private Preference mNotificationAccess;
     private Preference mZenAccess;
@@ -166,6 +170,7 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
         final PreferenceCategory notification = (PreferenceCategory)
                 findPreference(KEY_NOTIFICATION);
         initPulse(notification);
+	    initCharging(notification);
         initLockscreenNotifications(notification);
 
         mNotificationAccess = findPreference(KEY_NOTIFICATION_ACCESS);
@@ -440,6 +445,57 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
         }
     }
 
+    // === Charging light ===
+
+    private void initCharging(PreferenceCategory parent) {
+        mChargingLed = (TwoStatePreference) parent.findPreference(KEY_CHARGING_LED);
+        if (mChargingLed == null) {
+            Log.i(TAG, "Preference not found: " + KEY_CHARGING_LED);
+            return;
+        }
+        if (!getResources()
+                .getBoolean(com.android.internal.R.bool.config_intrusiveBatteryLed)) {
+            parent.removePreference(mChargingLed);
+        } else {
+            //Find kernel version, reading proc/version
+            try {
+                BufferedReader reader = new BufferedReader(new FileReader("/proc/version"), 256);
+                String version = reader.readLine();
+                if (!version.contains("mtv.corp.google.com")) {
+                    updateCharging();
+                    mChargingLed.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+                        @Override
+                        public boolean onPreferenceChange(Preference preference, Object newValue) {
+                            final boolean val = (Boolean)newValue;
+                            return Settings.System.putInt(getContentResolver(),
+                                    Settings.System.CHARGING_BATTERY_LED,
+                                    val ? 1 : 0);
+                        }
+                    });
+                } else {
+                mChargingLed.setEnabled(false);
+		        mChargingLed.setSummary(R.string.charging_led_support_info);
+		        }
+		        // close the reader  
+		        reader.close();
+		   } catch (Exception e) {
+                 // This will catch any exceptions
+           } 
+        }
+    }
+
+    private void updateCharging() {
+        if (mChargingLed == null) {
+            return;
+        }
+        try {
+            mChargingLed.setChecked(Settings.System.getInt(getContentResolver(),
+                    Settings.System.CHARGING_BATTERY_LED) == 1);
+        } catch (Settings.SettingNotFoundException snfe) {
+            Log.e(TAG, Settings.System.CHARGING_BATTERY_LED + " not found");
+        }
+    }
+
     // === Lockscreen (public / private) notifications ===
 
     private void initLockscreenNotifications(PreferenceCategory parent) {
@@ -552,6 +608,8 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
                 Settings.System.getUriFor(Settings.System.VIBRATE_WHEN_RINGING);
         private final Uri NOTIFICATION_LIGHT_PULSE_URI =
                 Settings.System.getUriFor(Settings.System.NOTIFICATION_LIGHT_PULSE);
+        private final Uri CHARGING_BATTERY_LED_URI =
+                Settings.System.getUriFor(Settings.System.CHARGING_BATTERY_LED);
         private final Uri LOCK_SCREEN_PRIVATE_URI =
                 Settings.Secure.getUriFor(Settings.Secure.LOCK_SCREEN_ALLOW_PRIVATE_NOTIFICATIONS);
         private final Uri LOCK_SCREEN_SHOW_URI =
@@ -566,6 +624,7 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
             if (register) {
                 cr.registerContentObserver(VIBRATE_WHEN_RINGING_URI, false, this);
                 cr.registerContentObserver(NOTIFICATION_LIGHT_PULSE_URI, false, this);
+                cr.registerContentObserver(CHARGING_BATTERY_LED_URI, false, this);
                 cr.registerContentObserver(LOCK_SCREEN_PRIVATE_URI, false, this);
                 cr.registerContentObserver(LOCK_SCREEN_SHOW_URI, false, this);
             } else {
@@ -581,6 +640,9 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
             }
             if (NOTIFICATION_LIGHT_PULSE_URI.equals(uri)) {
                 updatePulse();
+            }
+            if (CHARGING_BATTERY_LED_URI.equals(uri)) {
+                updateCharging();
             }
             if (LOCK_SCREEN_PRIVATE_URI.equals(uri) || LOCK_SCREEN_SHOW_URI.equals(uri)) {
                 updateLockscreenNotifications();
