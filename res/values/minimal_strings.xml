@@ -21,5 +21,9 @@
     <string name="crdroid_google_plus_title">Google+</string>
     <string name="crdroid_google_plus_summary">Visit our G+ page for support and news</string>
 
+    <!-- Changelog -->
+    <string name="changelog_crdroid_title">Changelog</string>
+    <string name="changelog_crdroid_error">Unable to load changelog</string>
+
 </resources>
 
