@@ -526,7 +526,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
      */
     private static String getDeviceProcessorInfo() {
         // Hardware : XYZ
-        final String PROC_HARDWARE_REGEX = "Hardware\\s*:\\s*(.*)\\(.*$"; /* hardware string */
+        final String PROC_HARDWARE_REGEX = "Hardware\\s*:\\s*(.*?)(?:\\(.*)?$"; /* hardware string */
 
         try {
             BufferedReader reader = new BufferedReader(new FileReader(FILENAME_PROC_CPUINFO));
