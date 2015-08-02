@@ -1230,7 +1230,7 @@ public class SettingsActivity extends Activity
         final boolean showDev = mDevelopmentPreferences.getBoolean(
                 DevelopmentSettings.PREF_SHOW,
                 android.os.Build.TYPE.equals("eng"));
-                true);
+
         final boolean isSecondaryUser =  UserHandle.myUserId() != UserHandle.USER_OWNER;        
 
         final UserManager um = (UserManager) getSystemService(Context.USER_SERVICE);
