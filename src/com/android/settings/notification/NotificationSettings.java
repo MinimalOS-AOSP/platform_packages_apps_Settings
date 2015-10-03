@@ -461,7 +461,7 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
             try {
                 BufferedReader reader = new BufferedReader(new FileReader("/proc/version"), 256);
                 String version = reader.readLine();
-                if (!version.contains("mtv.corp.google.com")) {
+                if (!version.contains("google.com")) {
                     updateCharging();
                     mChargingLed.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
                         @Override
