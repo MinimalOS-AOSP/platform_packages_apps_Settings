@@ -22,11 +22,6 @@
                 android:title="@string/about_crdroid"
                 android:fragment="com.android.settings.crdroid.About" />
 
-        <!-- Changelog -->
-        <PreferenceScreen android:key="changelog"
-                android:title="@string/changelog_crdroid_title"
-                android:fragment="com.android.settings.crdroid.Changelog" />
-
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
                 android:title="@string/device_status"
@@ -42,12 +37,6 @@
                 android:title="@string/manual">
             <intent android:action="android.settings.SHOW_MANUAL" />
         </PreferenceScreen>
-
-        <!-- Legal Information -->
-        <PreferenceScreen
-                android:key="container"
-                android:title="@string/legal_information"
-                android:fragment="com.android.settings.LegalSettings" />
 
         <PreferenceScreen
                 android:key="regulatory_info"
@@ -120,7 +109,7 @@
                 android:title="@string/build_number"
                 android:summary="@string/device_info_default"/>
 
-        <!-- Chroma build date -->
+        <!-- Minimal build date -->
         <Preference android:key="build_date"
                 style="?android:preferenceInformationStyle"
                 android:title="@string/build_date"
