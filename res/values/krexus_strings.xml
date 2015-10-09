@@ -4,5 +4,10 @@
     <!-- About phone screen, build date of ROM -->
     <string name="build_date">ROM build date</string>
     <string name="build_date_default">2015-10-05-0000</string>
+
+    <!-- Changelog -->
+    <string name="changelog_title">Changelog</string>
+    <string name="changelog_summary">Since the last update</string>
+    <string name="changelog_error">Unable to load changelog</string>
 </resources>
 
