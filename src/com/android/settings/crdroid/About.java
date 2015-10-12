@@ -15,6 +15,7 @@
  */
 package com.android.settings.crdroid;
 
+import com.android.internal.logging.MetricsLogger;
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
@@ -71,5 +72,10 @@ public class About extends SettingsPreferenceFragment {
         Uri uriUrl = Uri.parse(url);
         Intent donate = new Intent(Intent.ACTION_VIEW, uriUrl);
         getActivity().startActivity(donate);
+    }
+
+    @Override
+    protected int getMetricsCategory() {
+        return MetricsLogger.DISPLAY;
     }
 }

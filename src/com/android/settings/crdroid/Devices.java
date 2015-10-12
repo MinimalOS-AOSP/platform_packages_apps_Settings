@@ -16,6 +16,7 @@
 
 package com.android.settings.crdroid;
 
+import com.android.internal.logging.MetricsLogger;
 import android.os.Bundle;
 import android.content.res.Resources;
 import android.preference.Preference;
@@ -43,4 +44,10 @@ public class Devices extends SettingsPreferenceFragment implements
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         return false;
     }
+
+    @Override
+    protected int getMetricsCategory() {
+        return MetricsLogger.DISPLAY;
+
+}
 }
