@@ -17,7 +17,10 @@
         android:fragment="com.android.settings.minimal.StatusBarClockStyle"
         android:key="clock_style_pref"
         android:title="@string/status_bar_clock"
-	    android:summary="@string/status_bar_clock_summary" />
-    </PreferenceCategory>
+        android:summary="@string/status_bar_clock_summary" />
 
+     <com.android.settings.minimal.preference.SystemSettingSwitchPreference
+        android:key="double_tap_sleep_gesture"
+        android:title="@string/double_tap_to_sleep_title"
+        android:summary="@string/double_tap_to_sleep_summary" />
 </PreferenceScreen>
