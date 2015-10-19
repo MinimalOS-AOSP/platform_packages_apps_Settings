@@ -88,6 +88,19 @@
 
     </dashboard-category>
 
+    <!-- CUSTOMIZATIONS -->
+    <dashboard-category
+            android:id="@+id/minimal_section"
+            android:title="@string/header_category_minimal" >
+
+        <!-- ROM TWEAKS -->
+        <dashboard-tile
+                android:id="@+id/minimal_settings"
+                android:title="@string/minimal_settings_title"
+                android:fragment="com.android.settings.minimal.MinimalSettings" 
+        		android:icon="@drawable/ic_settings_minimal" />
+    </dashboard-category>
+
     <!-- DEVICE -->
     <dashboard-category
             android:id="@+id/device_section"
