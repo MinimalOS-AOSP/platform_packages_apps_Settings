@@ -3,7 +3,7 @@
 
     <!-- BUILD TWEAKS -->
     <string name="header_category_minimal">Personalization</string>
-    <string name="minimal_settings_title">Minimal</string>
+    <string name="minimal_settings_title">Minimal tweaks</string>
 
     <!-- Minimal Menu -->
     <string name="minimal_menu_personalizaton">Minimal options</string>

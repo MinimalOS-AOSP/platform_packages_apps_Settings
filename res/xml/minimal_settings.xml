@@ -3,10 +3,6 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/minimal_settings_title" >
 
-    <PreferenceCategory
-        android:key="category_minimal_personalization"
-        android:title="@string/minimal_menu_personalizaton" >
-
     <PreferenceScreen
         android:key="status_bar_general_category"
         android:fragment="com.android.settings.minimal.StatusBarSettings"
@@ -14,6 +10,7 @@
 
     <PreferenceScreen
         android:key="navigation_bar_general_category"
+        android:fragment="com.android.settings.minimal.NavigationBarSettings"
         android:title="@string/navigation_bar_screen_title" />
 
 <!--    <PreferenceScreen
@@ -28,5 +25,5 @@
         android:key="volume_rocker_general_category"
         android:fragment="com.android.settings.minimal.VolumeRockerSettings"
         android:title="@string/volume_rocker_screen_title" />
-</PreferenceCategory>
+
 </PreferenceScreen>
