@@ -16,13 +16,6 @@
     <string name="battery_title">Battery</string>
     <string name="battery2_summary">Customize battery icons and percentage</string>
 
-    <!-- Minimal Categories -->
-    <string name="display_category_batteryclock_options_title">Battery and clock options</string>
-    <string name="display_category_dtts_title">Double tap to sleep</string>
-    <string name="display_category_navbar_options_title">Navigation bar options</string>
-    <string name="display_category_statusbar_options_title">Status bar options</string>
-    <string name="display_category_wakeup_options_title">Wakeup options</string>
-
     <!-- Double tap to sleep on navigation bar -->
     <string name="double_tap_sleep_nav_bar_title">Double tap to sleep</string>
     <string name="double_tap_sleep_nav_bar_summary">Double tap navigation bar to put the device to sleep</string>
@@ -72,6 +65,7 @@
     
     <!-- About phone screen, Device model -->
     <string name="device_model">Device model</string>
+
     <!-- About phone screen, Device name -->
     <string name="device_name">Device name</string>
 
