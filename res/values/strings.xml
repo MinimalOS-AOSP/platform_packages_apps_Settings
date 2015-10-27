@@ -2971,7 +2971,7 @@
 
     <!-- Lock Pattern settings -->
     <!-- Security & location settings screen, header -->
-    <string name="lock_settings_title">Device security</string>
+    <string name="lock_settings_title">Device security &amp; lockscreen</string>
     <!-- Security & location settings screen, setting option name -->
     <string name="lockpattern_change_lock_pattern_label">Change unlock pattern</string>
     <!-- Security & location settings screen, change unlock pattern screen instruction when the user chooses "Change unlock pattern".  We first ask the user toe nter the current pattern, and this is the message seen -->
