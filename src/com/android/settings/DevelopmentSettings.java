@@ -1363,7 +1363,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private void updateAnimationScaleValue(int which, ListPreference pref) {
         try {
             float scale = mWindowManager.getAnimationScale(which);
-            if (scale != 1) {
+            if (scale != 0.75) {
                 mHaveDebugSettings = true;
             }
             CharSequence[] values = pref.getEntryValues();
