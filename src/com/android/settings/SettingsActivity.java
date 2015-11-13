@@ -1229,6 +1229,9 @@ public class SettingsActivity extends Activity
         final boolean showDev = mDevelopmentPreferences.getBoolean(
                 DevelopmentSettings.PREF_SHOW,
                 true);
+        final boolean showLayers = mDevelopmentPreferences.getBoolean(
+                DevelopmentSettings.PREF_LAYERS,
+                true);
 
         final UserManager um = (UserManager) getSystemService(Context.USER_SERVICE);
 
@@ -1315,7 +1318,7 @@ public class SettingsActivity extends Activity
                         supported = (getPackageManager().getPackageInfo("com.lovejoy777.rroandlayersmanager", 0).versionCode > 0);
                     } catch (PackageManager.NameNotFoundException e) {
                     }
-                    if (!supported) {
+                    if (!supported || !showLayers) {
                         removeTile = true;
                     }
                 }

@@ -155,5 +155,9 @@
 
     <!--  BitSyko Layers header name -->
     <string name="bitsyko_layers">Layers</string>
+
+    <!-- BitSyko Layers development settings switch -->
+    <string name="bitsyko_layers_dashboard">Layers manager</string>
+    <string name="bitsyko_layers_dashboard_summary">Show the manager in the Settings dashboard</string>
 </resources>
 

@@ -101,6 +101,11 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
      */
     public static final String PREF_SHOW = "show";
 
+    /**
+     * Whether to show the Layers Manager dashboard item to the user (if already installed).  Default is true.
+     */
+    public static final String PREF_LAYERS = "bitsyko_layers_dashboard";
+
     private static final String ENABLE_ADB = "enable_adb";
     private static final String CLEAR_ADB_KEYS = "clear_adb_keys";
     private static final String ENABLE_TERMINAL = "enable_terminal";
@@ -252,6 +257,8 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
 
     private ColorModePreference mColorModePreference;
 
+    private SwitchPreference mShowLayers;
+
     private final ArrayList<Preference> mAllPrefs = new ArrayList<Preference>();
 
     private final ArrayList<SwitchPreference> mResetSwitchPrefs
@@ -399,6 +406,9 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         mAllPrefs.add(mShowAllANRs);
         mResetSwitchPrefs.add(mShowAllANRs);
 
+
+        mShowLayers = findAndInitSwitchPref(PREF_LAYERS);
+
         Preference hdcpChecking = findPreference(HDCP_CHECKING_KEY);
         if (hdcpChecking != null) {
             mAllPrefs.add(hdcpChecking);
@@ -503,6 +513,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
                 Settings.Global.DEVELOPMENT_SETTINGS_ENABLED, 0) != 0;
         mSwitchBar.setChecked(mLastEnabledState);
         setPrefsEnabledState(mLastEnabledState);
+        updateShowLayersOptions();
 
         if (mHaveDebugSettings && !mLastEnabledState) {
             // Overall debugging is disabled, but there are some debug
@@ -660,6 +671,17 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             hdcpChecking.setSummary(summaries[index]);
             hdcpChecking.setOnPreferenceChangeListener(this);
         }
+    }
+
+    private void writeShowLayersOptions() {
+        getActivity().getSharedPreferences(PREF_FILE, Context.MODE_PRIVATE).edit()
+           .putBoolean(PREF_LAYERS, mShowLayers.isChecked())
+           .apply();
+    }
+
+    private void updateShowLayersOptions() {
+        mShowLayers.setChecked(getActivity().getSharedPreferences(PREF_FILE,
+                            Context.MODE_PRIVATE).getBoolean(PREF_LAYERS, true));
     }
 
     private void updatePasswordSummary() {
@@ -1665,6 +1687,8 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             writeUSBAudioOptions();
         } else if (INACTIVE_APPS_KEY.equals(preference.getKey())) {
             startInactiveAppsFragment();
+        } else if (preference == mShowLayers) {
+            writeShowLayersOptions();
         } else {
             return super.onPreferenceTreeClick(preferenceScreen, preference);
         }

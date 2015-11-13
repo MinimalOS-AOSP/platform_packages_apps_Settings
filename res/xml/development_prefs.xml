@@ -50,6 +50,11 @@
         android:title="@string/oem_unlock_enable"
         android:summary="@string/oem_unlock_enable_summary"/>
 
+    <SwitchPreference
+        android:key="bitsyko_layers_dashboard"
+        android:title="@string/bitsyko_layers_dashboard"
+        android:summary="@string/bitsyko_layers_dashboard_summary"/>
+
     <PreferenceScreen
         android:key="running_apps"
         android:title="@string/runningservices_settings_title"
