@@ -687,6 +687,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private void updateShowLayersOptions() {
         mShowLayers.setChecked(getActivity().getSharedPreferences(PREF_FILE,
                             Context.MODE_PRIVATE).getBoolean(PREF_LAYERS, true));
+    }
 
     private void writeKillAppLongpressBackOptions() {
         Settings.Secure.putInt(getActivity().getContentResolver(),
