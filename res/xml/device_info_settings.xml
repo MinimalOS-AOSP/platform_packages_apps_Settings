@@ -21,7 +21,7 @@
         <PreferenceScreen android:key="changelog"
                 android:title="@string/changelog_title"
                 android:summary="@string/changelog_summary"
-                android:fragment="com.android.settings.krexus.Changelog" />
+                android:fragment="com.android.settings.minimal.Changelog" />
 
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
