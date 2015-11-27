@@ -163,11 +163,5 @@
     <!-- Development options - kill app long press back -->
     <string name="kill_app_longpress_back">Kill app back button</string>
     <string name="kill_app_longpress_back_summary">Kill the foreground app by long-pressing the back key</string>
-
-    <!-- Sound & notification > Notification section: Title for the charging battery light option. [CHAR LIMIT=30] -->
-    <string name="charging_led_title">Charging battery light</string>
-    
-    <!-- Sound & notification > Notification section: Summary for the charging battery light kernel support. [CHAR LIMIT=30] -->
-    <string name="charging_led_support_info">3rd party kernel with the \"led always on\" patch is required.</string>
 </resources>
 
