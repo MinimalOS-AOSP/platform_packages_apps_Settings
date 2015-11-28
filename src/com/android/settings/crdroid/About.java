@@ -54,7 +54,7 @@ public class About extends SettingsPreferenceFragment {
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         if (preference == mSourceUrl) {
-            launchUrl("https://github.com/MinimalOS");
+            launchUrl("https://github.com/MinimalOS-AOSP");
         } else if (preference == mGoogleUrl) {
             launchUrl("https://plus.google.com/u/0/communities/113231455842300304229");
         } else if (preference.getKey().equals(KEY_CRDROID_SHARE)) {
