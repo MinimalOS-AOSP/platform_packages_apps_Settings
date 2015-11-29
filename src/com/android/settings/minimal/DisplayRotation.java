@@ -98,11 +98,6 @@ public class DisplayRotation extends SettingsPreferenceFragment implements OnPre
     }
 
     @Override
-    protected int getMetricsCategory() {
-        return MetricsLogger.ROTATION_SETTINGS;
-    }
-
-    @Override
     public void onResume() {
         super.onResume();
 
