@@ -85,7 +85,7 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.STATUSBAR_SETTINGS;
+        return MetricsLogger.APPLICATION;
     }
 
     private PreferenceScreen createCustomView() {

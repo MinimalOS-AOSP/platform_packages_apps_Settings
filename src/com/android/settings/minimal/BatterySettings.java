@@ -43,7 +43,7 @@ public class BatterySettings extends SettingsPreferenceFragment
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsLogger.BATTERY_SETTINGS;
+        return MetricsLogger.APPLICATION;
     }
 
     @Override
