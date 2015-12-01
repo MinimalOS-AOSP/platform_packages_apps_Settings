@@ -1228,7 +1228,7 @@ public class SettingsActivity extends Activity
     private void updateTilesList(List<DashboardCategory> target) {
         final boolean showDev = mDevelopmentPreferences.getBoolean(
                 DevelopmentSettings.PREF_SHOW,
-                true);
+                android.os.Build.TYPE.equals("eng"));
         final boolean showLayers = mDevelopmentPreferences.getBoolean(
                 DevelopmentSettings.PREF_LAYERS,
                 true);
