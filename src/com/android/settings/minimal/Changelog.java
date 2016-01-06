@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.krexus;
+package com.android.settings.minimal;
 
 import android.app.Fragment;
 import android.os.Bundle;
