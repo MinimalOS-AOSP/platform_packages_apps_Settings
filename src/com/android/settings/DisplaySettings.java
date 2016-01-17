@@ -59,7 +59,7 @@ import android.provider.Settings;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.android.settings.krexus.DisplayRotation;
+import com.android.settings.minimal.DisplayRotation;
 
 import java.util.ArrayList;
 import java.util.List;

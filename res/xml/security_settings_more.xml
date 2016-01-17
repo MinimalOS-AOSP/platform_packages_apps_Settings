@@ -22,6 +22,6 @@
         android:key="lockscreen_settings"
         android:title="@string/lockscreen_settings_title"
         android:persistent="false"
-        android:fragment="com.android.settings.krexus.LockscreenSettings" />
+        android:fragment="com.android.settings.minimal.LockscreenSettings" />
 
 </PreferenceScreen>

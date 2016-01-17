@@ -102,7 +102,7 @@
 
         <PreferenceScreen
                 android:key="display_rotation"
-                android:fragment="com.android.settings.krexus.DisplayRotation"
+                android:fragment="com.android.settings.minimal.DisplayRotation"
                 android:title="@string/display_rotation_title" />
 
         <PreferenceScreen
