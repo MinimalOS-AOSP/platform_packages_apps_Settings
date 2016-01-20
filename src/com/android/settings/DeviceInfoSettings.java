@@ -88,6 +88,12 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String PROPERTY_EQUIPMENT_ID = "ro.ril.fccid";
     private static final String KEY_DEVICE_FEEDBACK = "device_feedback";
     private static final String KEY_SAFETY_LEGAL = "safetylegal";
+    private static final String PROPERTY_UBER_AND = "ro.uber.android";
+    private static final String PROPERTY_UBER_KERNEL = "ro.uber.kernel";
+    private static final String PROPERTY_UBER_FLAGS = "ro.uber.flags";
+    private static final String KEY_UBER_AND = "uber_android";
+    private static final String KEY_UBER_KERNEL = "uber_kernel";
+    private static final String KEY_UBER_FLAGS = "uber_flags";
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 
@@ -98,10 +104,10 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     @Override
     protected int getMetricsCategory() {
         return MetricsLogger.DEVICEINFO;
-    }
+     }
 
     @Override
-    protected int getHelpResource() {
+     protected int getHelpResource() {
         return R.string.help_uri_about;
     }
 
@@ -137,6 +143,9 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         findPreference(KEY_BUILD_NUMBER).setEnabled(true);
         findPreference(KEY_KERNEL_VERSION).setSummary(getFormattedKernelVersion());
         setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
+        setValueSummary(KEY_UBER_AND, PROPERTY_UBER_AND);
+        setValueSummary(KEY_UBER_KERNEL,  PROPERTY_UBER_KERNEL);
+        setValueSummary(KEY_UBER_FLAGS, PROPERTY_UBER_FLAGS);
 
         if (!SELinux.isSELinuxEnabled()) {
             String status = getResources().getString(R.string.selinux_status_disabled);
@@ -145,6 +154,14 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
             String status = getResources().getString(R.string.selinux_status_permissive);
             setStringSummary(KEY_SELINUX_STATUS, status);
         }
+
+        // Remove UBERTC information if property is not present
+        removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_UBER_AND,
+                PROPERTY_UBER_AND);
+        removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_UBER_KERNEL,
+                PROPERTY_UBER_KERNEL);
+        removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_UBER_FLAGS,
+                PROPERTY_UBER_FLAGS);
 
         // Remove Safety information preference if PROPERTY_URL_SAFETYLEGAL is not set
         removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_SAFETY_LEGAL,
@@ -196,7 +213,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                 getPreferenceScreen().removePreference(pref);
             }
         }
-    }
+     }
 
     @Override
     public void onResume() {
