@@ -19,6 +19,5 @@
         android:title="@string/status_bar_clock"
 	    android:summary="@string/status_bar_clock_summary" />
     </PreferenceCategory>
-    </PreferenceCategory>
 
 </PreferenceScreen>

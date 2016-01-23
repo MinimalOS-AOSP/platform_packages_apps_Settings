@@ -48,7 +48,8 @@
         <item>1000</item>
         <item>2000</item>
         <item>5000</item>
-		
+    </string-array>		
+
     <string-array name="status_bar_battery_style_entries" translatable="false">
         <item>@string/status_bar_battery_style_icon_portrait</item>
         <item>@string/status_bar_battery_style_icon_landscape</item>
@@ -78,22 +79,7 @@
         <item>1</item>
         <item>2</item>
     </string-array>
-<<<<<<< HEAD
-=======
-
-    <!-- Quick pulldown -->
-    <string-array name="quick_pulldown_entries" translatable="false">
-        <item>@string/quick_pulldown_off</item>
-        <item>@string/quick_pulldown_right</item>
-        <item>@string/quick_pulldown_left</item>
-    </string-array>
-
-    <string-array name="quick_pulldown_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-
+	
     <!-- Clock and date -->
     <string-array name="clock_style_entries" translatable="false">
         <item>@string/right_clock</item>
@@ -164,5 +150,5 @@
         <item>EEEE MM/dd</item>
         <item>@string/clock_date_format_custom</item>
     </string-array>
->>>>>>> 1964ec9... Settings: statusbar clock customization + initial interface + color picker
+
 </resources>

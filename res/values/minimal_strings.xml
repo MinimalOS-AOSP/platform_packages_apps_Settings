@@ -15,6 +15,17 @@
     <string name="volume_rocker_screen_title">Volume rocker</string>
     <string name="battery_title">Battery</string>
     <string name="battery2_summary">Customize battery icons and percentage</string>
+	
+    <string name="display_category_batteryclock_options_title">Battery and clock options</string>
+    <string name="display_category_clock_options_title">Clock options</string>
+    <string name="display_category_lockscreen_options_title">Lockscreen options</string>
+    <string name="display_category_qs">Quick Settings</string>
+    <string name="display_category_dtts_title">Double tap to sleep</string>
+    <string name="display_category_navbar_options_title">Navigation bar options</string>
+    <string name="display_category_onscreen">On-screen buttons</string>
+    <string name="display_category_media_options_title">Media options</string>
+    <string name="display_category_statusbar_options_title">Status bar options</string>
+    <string name="display_category_wakeup_options_title">Wakeup options</string>	
 
     <!-- Double tap to sleep on navigation bar -->
     <string name="double_tap_sleep_nav_bar_title">Double tap to sleep</string>
@@ -97,9 +108,9 @@
     <string name="ok_string">Ok</string>
 
     <!-- UBER GCC version info -->
-    <string name="uber_android">GCC android</string>
+    <string name="uber_android">ROM toolchain</string>
     <string name="uber_android_default">Unknown</string>
-    <string name="uber_kernel">GCC kernel</string>
+    <string name="uber_kernel">Kernel toolchain</string>
     <string name="uber_kernel_default">Unknown</string>
 
     <!-- UBER GCC build flags info -->
@@ -180,9 +191,6 @@
     <string name="status_bar_battery_percentage_dialog_title">Battery percentage</string>
     <string name="status_bar_battery_percentage_default">Hidden (default)</string>
     <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
-<<<<<<< HEAD
-    <string name="status_bar_battery_percentage_text_next">Next to the icon</string>	
-=======
     <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
 
     <!-- RAM: Memory Info -->
@@ -200,7 +208,7 @@
     <string name="volbtn_music_controls_summary">When screen off, long-pressing the volume rockers will seek music tracks</string>
     <string name="volume_button_toggle_info">Volume rocker wake must be disabled</string>
 
-<!-- Clock and date -->
+    <!-- Clock and date -->
     <string name="status_bar_clock">Clock &amp; date</string>
     <string name="status_bar_clock_title">Clock &amp; date style</string>
     <string name="status_bar_clock_summary">Change various clock &amp; date options</string> 
@@ -237,5 +245,16 @@
     <string name="clock_date_style_uppercase">Uppercase</string>
     <string name="clock_date_format_custom">Custom java format</string>
     <string name="status_bar_clock_style_reset_message">Reset clock color?</string>
->>>>>>> 1964ec9... Settings: statusbar clock customization + initial interface + color picker
+	
+    <!-- Generic strings -->
+    <string name="ok_string">OK</string>
+    <string name="default_string">Default</string>
+    <string name="enabled_string">Enabled</string>
+    <string name="disabled_string">Disabled</string>
+    <string name="general_string">General</string>
+    <string name="reset_string">Reset</string>
+    <string name="empty_string">Empty</string>
+    <string name="font_size_sample">Sample</string>
+    <string name="attention">Attention</string>	
+	
 </resources>
