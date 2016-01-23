@@ -9,7 +9,7 @@
 
     <PreferenceScreen
         android:key="status_bar_general_category"
-        android:fragment="com.android.settings.chroma.StatusBarSettings"
+        android:fragment="com.android.settings.minimal.StatusBarSettings"
         android:title="@string/status_bar_screen_title"/>
 
     <PreferenceScreen
