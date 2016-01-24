@@ -15,7 +15,7 @@
     <string name="volume_rocker_screen_title">Volume rocker</string>
     <string name="battery_title">Battery</string>
     <string name="battery2_summary">Customize battery icons and percentage</string>
-	
+
     <string name="display_category_batteryclock_options_title">Battery and clock options</string>
     <string name="display_category_clock_options_title">Clock options</string>
     <string name="display_category_lockscreen_options_title">Lockscreen options</string>
@@ -25,11 +25,15 @@
     <string name="display_category_onscreen">On-screen buttons</string>
     <string name="display_category_media_options_title">Media options</string>
     <string name="display_category_statusbar_options_title">Status bar options</string>
-    <string name="display_category_wakeup_options_title">Wakeup options</string>	
+    <string name="display_category_wakeup_options_title">Wakeup options</string>
 
     <!-- Double tap to sleep on navigation bar -->
     <string name="double_tap_sleep_nav_bar_title">Double tap to sleep</string>
     <string name="double_tap_sleep_nav_bar_summary">Double tap navigation bar to put the device to sleep</string>
+
+    <!-- Double tap-to-sleep status bar-->
+    <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
+    <string name="double_tap_to_sleep_summary">Double-tap on the status bar or top third and bottom shortcut area of the lock screen to turn off the display</string>
 
     <!-- About phone screen, build date of ROM -->
     <string name="build_date">ROM build date</string>
@@ -63,9 +67,14 @@
 
     <!-- Wakeup section under Display settings -->
     <string name="wakeup_section_header">Wake up</string>
+
     <!-- Volume rocker wake -->
     <string name="volume_rocker_wake_title">Volume rocker wake</string>
     <string name="volume_rocker_wake_summary">Pressing the volume keys will wake your device</string>
+
+    <!-- Volume rocker music seek options -->
+    <string name="volbtn_music_controls_title">Volume rocker music controls</string>
+    <string name="volbtn_music_controls_summary">When screen off, long-pressing the volume rockers will seek music tracks</string>
 
     <!-- Display : Rotation -->
     <string name="display_rotation_title">Rotation</string>
@@ -193,20 +202,12 @@
     <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
     <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
 
-    <!-- RAM: Memory Info -->
-    <string name="mem_info">RAM</string>
-
     <!-- Status bar quick qs pulldown -->
     <string name="title_quick_pulldown">Quick pulldown</string>
     <string name="summary_quick_pulldown">%1$s edge of the status bar pulls down Quick Settings</string>
     <string name="quick_pulldown_off">Off</string>
     <string name="quick_pulldown_left">Left</string>
     <string name="quick_pulldown_right">Right</string>
-
-    <!-- Volume rocker music seek options -->
-    <string name="volbtn_music_controls_title">Volume rocker music controls</string>
-    <string name="volbtn_music_controls_summary">When screen off, long-pressing the volume rockers will seek music tracks</string>
-    <string name="volume_button_toggle_info">Volume rocker wake must be disabled</string>
 
     <!-- Clock and date -->
     <string name="status_bar_clock">Clock &amp; date</string>
@@ -275,8 +276,4 @@
     <string name="navigation_bar_size_24_dp">24 dp</string>
     <string name="navigation_bar_size_20_dp">20 dp</string>
     <string name="navigation_bar_size_0_dp">0 dp (off)</string>
-
-    <!-- Double tap-to-sleep -->
-    <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
-    <string name="double_tap_to_sleep_summary">Double-tap on the status bar or top third and bottom shortcut area of the lock screen to turn off the display</string>
 </resources>

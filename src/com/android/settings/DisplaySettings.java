@@ -82,9 +82,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_AUTO_ROTATE = "auto_rotate";
     private static final String KEY_NIGHT_MODE = "night_mode";
     private static final String KEY_CAMERA_GESTURE = "camera_gesture";
-    private static final String KEY_CAMERA_DOUBLE_TAP_POWER_GESTURE
-            = "camera_double_tap_power_gesture";
-    private static final String VOLUME_ROCKER_WAKE = "volume_rocker_wake";
+    private static final String KEY_CAMERA_DOUBLE_TAP_POWER_GESTURE = "camera_double_tap_power_gesture";
 
     private static final int DLG_GLOBAL_CHANGE_WARNING = 1;
 
@@ -108,7 +106,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private SwitchPreference mAutoBrightnessPreference;
     private SwitchPreference mCameraGesturePreference;
     private SwitchPreference mCameraDoubleTapPowerGesturePreference;
-    private SwitchPreference mVolumeRockerWake;
 
     @Override
     protected int getMetricsCategory() {
@@ -208,11 +205,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             mNightModePreference.setOnPreferenceChangeListener(this);
         }
 
-        mVolumeRockerWake = (SwitchPreference) findPreference(VOLUME_ROCKER_WAKE);
-        mVolumeRockerWake.setOnPreferenceChangeListener(this);
-        int volumeRockerWake = Settings.System.getInt(getContentResolver(),
-                VOLUME_ROCKER_WAKE, 0);
-        mVolumeRockerWake.setChecked(volumeRockerWake != 0);
     }
 
     private static boolean allowAllRotations(Context context) {
@@ -540,11 +532,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             } catch (NumberFormatException e) {
                 Log.e(TAG, "could not persist night mode setting", e);
             }
-        }
-        if (preference == mVolumeRockerWake) {
-            boolean value = (Boolean) objValue;
-            Settings.System.putInt(getContentResolver(), VOLUME_ROCKER_WAKE,
-                    value ? 1 : 0);
         }
         return true;
     }
