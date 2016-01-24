@@ -11,13 +11,14 @@
         android:fragment="com.android.settings.minimal.BatterySettings"
         android:key="battery_style_pref"
         android:title="@string/battery_title"
-    	android:summary="@string/battery2_summary" />
+        android:summary="@string/battery2_summary" />
 
     <PreferenceScreen
         android:fragment="com.android.settings.minimal.StatusBarClockStyle"
         android:key="clock_style_pref"
         android:title="@string/status_bar_clock"
         android:summary="@string/status_bar_clock_summary" />
+    </PreferenceCategory>
 
      <com.android.settings.minimal.preference.SystemSettingSwitchPreference
         android:key="double_tap_sleep_gesture"
