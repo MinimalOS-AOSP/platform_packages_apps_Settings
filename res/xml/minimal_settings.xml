@@ -27,6 +27,7 @@
 
     <PreferenceScreen
         android:key="volume_rocker_general_category"
+        android:fragment="com.android.settings.minimal.VolumeRockerSettings"		
         android:title="@string/volume_rocker_screen_title" />
 </PreferenceCategory>
 </PreferenceScreen>
