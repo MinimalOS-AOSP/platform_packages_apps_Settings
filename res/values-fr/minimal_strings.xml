@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- BUILD TWEAKS -->
+    <string name="header_category_minimal">Personnalisation</string>
+    <string name="minimal_settings_title">Minimal</string>
+
+    <!-- Minimal Menu -->
+    <string name="minimal_menu_personalizaton">Options Minimal </string>
+    <string name="minimal_menu_about">À propos de Minimal</string>
+    <string name="status_bar_screen_title">Barre de statut</string>
+    <string name="navigation_bar_screen_title">Barre de navigation</string>
+    <string name="lockscreen_title">Écran de verrouillage</string>
+    <string name="power_menu_title">Menu d\'alimentation</string>
+    <string name="volume_rocker_screen_title">Touche volume</string>
+    <string name="battery_title">Batterie</string>
+    <string name="battery2_summary">Personnaliser l\'icône de batterie et le pourcentage</string>
+
+    <string name="display_category_batteryclock_options_title">Option de la batterie et de l\'horloge</string>
+    <string name="display_category_clock_options_title">Options de l\'horloge</string>
+    <string name="display_category_lockscreen_options_title">Options de l\'écran de verouillage</string>
+    <string name="display_category_qs">Paramètres rapide</string>
+    <string name="display_category_dtts_title">Double-taper pour verouiller</string>
+    <string name="display_category_navbar_options_title">Options de la barre de navigation</string>
+    <string name="display_category_onscreen">Bouton écran allumé</string>
+    <string name="display_category_media_options_title">Options média</string>
+    <string name="display_category_statusbar_options_title">Options de la barre de statut</string>
+    <string name="display_category_wakeup_options_title">Options d\'allumage</string>
+
+    <!-- Double tap to sleep on navigation bar -->
+    <string name="double_tap_sleep_nav_bar_title">Double-taper pour réveiller</string>
+    <string name="double_tap_sleep_nav_bar_summary">Double-taper dans la barre de navigation pour vérouiller</string>
+
+    <!-- Double tap-to-sleep status bar-->
+    <string name="double_tap_to_sleep_title">Double-taper pour verouiller</string>
+    <string name="double_tap_to_sleep_summary">Double-taper sur la barre de statut ou sur le haut de l\'écran de verouillage pour verouiller l\'appareil</string>
+
+    <!-- About phone screen, build date of ROM -->
+    <string name="build_date">Date de la build/string>
+    <string name="build_date_default">2015-10-05-0000</string>
+
+    <!-- Changelog -->
+    <string name="changelog_title">Changelog</string>
+    <string name="changelog_summary">Depuis la dernière mise à jour</string>
+    <string name="changelog_error">Impossible de charger le changelog</string>
+
+    <!-- About phone screen, processor info label  [CHAR LIMIT=40] -->
+    <string name="processor_info">Processeur</string>
+
+    <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
+    <string name="supersu_title">SuperSU</string>
+
+    <!-- Advanced reboot options -->
+    <string name="advanced_reboot_title">Redémarrage avancé</string>
+    <string name="advanced_reboot_summary">Déverouillé, inclure les paramètre de redémarrage vers le recovery, bootloader ou faire un soft reboot</string>
+
+    <!-- Development options - kill app long press back -->
+    <string name="kill_app_longpress_back">Touche retour pour supprimer l\'app</string>
+    <string name="kill_app_longpress_back_summary">Tuer l\'application au premier plan par une longue-pression sur la touche retour</string>
+
+    <!-- Language options - Volume rocker cursor control -->
+    <string name="cursor_section_header">Curseur</string>
+    <string name="volume_key_cursor_control_title">Commande volume pour contrôler le curseur</string>
+    <string name="volume_key_cursor_control_off">Désactivé</string>
+    <string name="volume_key_cursor_control_on">Volume bas/haut pour bouger le curseur à gauche/droite</string>
+    <string name="volume_key_cursor_control_on_reverse">Volume haut/bas pour bouger le curseur à droite/gauche</string>
+
+    <!-- Wakeup section under Display settings -->
+    <string name="wakeup_section_header">Allumage</string>
+
+    <!-- Volume rocker wake -->
+    <string name="volume_rocker_wake_title">Touche de volume pour réveiller</string>
+    <string name="volume_rocker_wake_summary">Toucher sur les touches volumes pour réveiller l\'appareil</string>
+
+    <!-- Volume rocker music seek options -->
+    <string name="volbtn_music_controls_title">Contrôle de la musique avec les touches volumes</string>
+    <string name="volbtn_music_controls_summary">Quand l\'écran est éteint, un appuie long sur le volume passera à la musique suivante</string>
+
+    <!-- Display : Rotation -->
+    <string name="display_rotation_title">Rotation</string>
+    <string name="display_rotation_disabled">Désactivé</string>
+    <string name="display_rotation_unit">degrés</string>
+    <string name="display_rotation_category_title">Modes de rotation</string>
+    <string name="display_rotation_0_title">0 degré</string>
+    <string name="display_rotation_90_title">90 degrés</string>
+    <string name="display_rotation_180_title">180 degrés</string>
+    <string name="display_rotation_270_title">270 degrés</string>
+
+    <!-- About MinimalOS -->
+    <string name="about_crdroid">À propos de MinimalOSS</string>
+
+        <!-- Share MinimalOS -->
+    <string name="share_crdroid_title">Partager MinimalOS</string>
+    <string name="share_crdroid_summary">Faites connaître MinimalOS</string>
+    <string name="share_message">Plus d\'informations au sujet de #MinimalOS sur @ https://plus.google.com/u/0/communities/113231455842300304229</string>
+    <string name="share_chooser_title">Partager MinimalOS</string>
+
+   <!-- Sites Minimal OS -->
+    <string name="sites_crdroid">Liens utiles</string>
+    <string name="crdroid_source_title">Github</string>
+    <string name="crdroid_source_summary">Regarder les sources des ROM\'s</string>
+    <string name="crdroid_google_plus_title">Google+</string>
+    <string name="crdroid_google_plus_summary">Vister la page G+ pour le support et les nouveautés</string>
+    
+    <!-- RAM: Memory Info -->
+    <string name="mem_info">RAM</string>
+
+    <!-- Lock screen settings -->
+    <string name="lockscreen_settings_title">Ecran de verrouillage</string>
+    <string name="lockscreen_wallpaper_title">Fond d\'écran</string>
+    <string name="lockscreen_wallpaper_set_title">Sélectioner un fond d\'écran de verrouillage</string>
+    <string name="lockscreen_wallpaper_clear_title">Clear lock screen wallpaper</string>
+
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Restaurer les stats</string>
+    <string name="battery_stats_message">L\'historique de la batterie sera supprimé</string>
+    <string name="ok_string">Ok</string>
+
+    <!-- UBER GCC version info -->
+    <string name="uber_android">ROM toolchain</string>
+    <string name="uber_android_default">Inconnus</string>
+    <string name="uber_kernel">Kernel toolchain</string>
+    <string name="uber_kernel_default">Inconnus</string>
+
+    <!-- UBER GCC build flags info -->
+    <string name="uber_flags">Optimisations</string>
+    <string name="uber_flags_default">Aucune</string>
+
+    <!-- Notification light dialogs -->
+    <string name="edit_light_settings">Edit light settings</string>
+    <string name="pulse_speed_title">Pulse length and speed</string>
+    <string name="default_time">Normal</string>
+    <string name="custom_time">Custom</string>
+    <string name="dialog_delete_title">Delete</string>
+    <string name="dialog_delete_message">Remove selected item?</string>
+
+    <!-- Values for the notification light pulse spinners -->
+    <string name="pulse_length_always_on">Always on</string>
+    <string name="pulse_length_very_short">Very short</string>
+    <string name="pulse_length_short">Short</string>
+    <string name="pulse_length_normal">Normal</string>
+    <string name="pulse_length_long">Long</string>
+    <string name="pulse_length_very_long">Very long</string>
+    <string name="pulse_speed_very_fast">Very fast</string>
+    <string name="pulse_speed_fast">Fast</string>
+    <string name="pulse_speed_normal">Normal</string>
+    <string name="pulse_speed_slow">Slow</string>
+    <string name="pulse_speed_very_slow">Very slow</string>
+
+    <!-- Battery light settings -->
+    <string name="battery_light_title">Battery light</string>
+    <string name="battery_low_pulse_title">Pulse if battery low</string>
+    <string name="battery_light_list_title">Colors</string>
+    <string name="battery_light_low_color_title">Battery low</string>
+    <string name="battery_light_medium_color_title">Charging</string>
+    <string name="battery_light_full_color_title">Fully charged</string>
+
+    <!-- Lights settings screen, notification light settings -->
+    <string name="notification_light_title">Notification light</string>
+    <string name="notification_light_general_title">General</string>
+    <string name="notification_light_applist_title">Apps</string>
+    <string name="notification_light_phonelist_title">Phone</string>
+    <string name="notification_light_use_custom">Use custom values</string>
+    <string name="notification_light_default_value">Default</string>
+    <string name="notification_light_missed_call_title">Missed call</string>
+    <string name="notification_light_voicemail_title">Voicemail</string>
+    <string name="notification_light_screen_on">Lights with screen on</string>
+    <string name="allow_lights_title">Notification lights in DND mode</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on color below to apply</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Set</string>
+    <string name="color_default">Default</string>
+
+    <!-- Profiles -->
+    <string name="profile_reset_title">Reset</string>
+    <string name="profiles_add">Add</string>
+    <string name="profile_choose_app">Choose app</string>
+    <string name="profile_applist_title">Apps</string>
+    <string name="picker_activities">Activities</string>
+    <string name="select_custom_app_title">Select custom app</string>
+    <string name="select_custom_activity_title">Select custom activity</string>
+
+    <!-- Status bar - Battery -->
+    <string name="status_bar_battery_style_title">Battery status style</string>
+    <string name="status_bar_battery_style_icon_portrait">Icon portrait</string>
+    <string name="status_bar_battery_style_icon_landscape">Icon landscape</string>
+    <string name="status_bar_battery_style_circle">Circle</string>
+    <string name="status_bar_battery_style_dotted_circle">Dotted circle</string>
+    <string name="status_bar_battery_style_text">Text</string>
+    <string name="status_bar_battery_style_hidden">Hidden</string>
+
+    <!-- Battery percentage -->
+    <string name="status_bar_battery_percentage_title">Show battery percentage</string>
+    <string name="status_bar_battery_percentage_dialog_title">Battery percentage</string>
+    <string name="status_bar_battery_percentage_default">Hidden (default)</string>
+    <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
+    <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
+
+    <!-- Status bar quick qs pulldown -->
+    <string name="title_quick_pulldown">Quick pulldown</string>
+    <string name="summary_quick_pulldown">%1$s edge of the status bar pulls down Quick Settings</string>
+    <string name="quick_pulldown_off">Off</string>
+    <string name="quick_pulldown_left">Left</string>
+    <string name="quick_pulldown_right">Right</string>
+
+    <!-- Clock and date -->
+    <string name="status_bar_clock">Clock &amp; date</string>
+    <string name="status_bar_clock_title">Clock &amp; date style</string>
+    <string name="status_bar_clock_summary">Change various clock &amp; date options</string> 
+    <string name="clock_styles_summary">Customize clock styles and date format</string>
+    <string name="clock_title_enable">Alignment</string>
+    <string name="clock_enabled">Enabled</string>
+    <string name="clock_disabled">Disabled</string>
+    <string name="clock_color_title">Color</string>
+    <string name="status_bar_clock_style_reset">Reset color</string>
+    <string name="status_bar_show_clock_title">Show clock and date</string>
+    <string name="status_bar_am_pm_title">AM/PM</string>
+    <string name="status_bar_am_pm_info">24-hour clock is enabled</string>
+    <string name="enable_clock_weekday">Day of the week</string>
+    <string name="enable_clock_weekday_summary">Abbreviated day of the week before the time</string>
+    <string name="right_clock">Right clock</string>
+    <string name="center_clock">Center clock</string>
+    <string name="left_clock">Left clock</string>
+    <string name="dont_show">Don\'t show</string>
+    <string name="clock_date_display">Date</string>
+    <string name="clock_date_display_summary">Display custom date before the clock</string>
+    <string name="clock_date_style">Date</string>
+    <string name="clock_time_style">Time</string>
+    <string name="clock_date_format">Date format</string>
+    <string name="clock_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">Enter string</string>
+    <string name="am_pm_clock_normal">Normal font size</string>
+    <string name="am_pm_clock_small">Small font size</string>
+    <string name="am_pm_clock_none">Don\'t show</string>
+    <string name="clock_date_display_none">Don\'t show</string>
+    <string name="clock_date_display_small">Small font size</string>
+    <string name="clock_date_display_normal">Normal font size</string>
+    <string name="clock_date_style_normal">Normal</string>
+    <string name="clock_date_style_lowercase">Lowercase</string>
+    <string name="clock_date_style_uppercase">Uppercase</string>
+    <string name="clock_date_format_custom">Custom java format</string>
+    <string name="status_bar_clock_style_reset_message">Reset clock color?</string>
+
+    <!-- Generic strings -->
+    <string name="ok_string">OK</string>
+    <string name="default_string">Default</string>
+    <string name="enabled_string">Enabled</string>
+    <string name="disabled_string">Disabled</string>
+    <string name="general_string">General</string>
+    <string name="reset_string">Reset</string>
+    <string name="empty_string">Empty</string>
+    <string name="font_size_sample">Sample</string>
+    <string name="attention">Attention</string>	
+
+    <!-- Navigation bar -->
+    <string name="navigation_bar_category">Navigation bar</string>
+    <string name="navbar_enable_bar">Enable</string>
+    <string name="navbar_dimen_title">Dimensions</string>
+    <string name="navbar_dimensions_reset_message">Reset all dimensions entries to default?</string>
+    <string name="navigation_bar_height_title">Navigation bar height</string>
+    <string name="navigation_bar_height_landscape_title">Navigation bar height landscape</string>
+    <string name="navigation_bar_width_title">Navigation bar width</string>
+    <string name="navigation_bar_size_48_dp">48 dp (default)</string>
+    <string name="navigation_bar_size_44_dp">44 dp</string>
+    <string name="navigation_bar_size_42_dp_default">42 dp (default)</string>
+    <string name="navigation_bar_size_40_dp">40 dp</string>
+    <string name="navigation_bar_size_36_dp">36 dp</string>
+    <string name="navigation_bar_size_32_dp">32 dp</string>
+    <string name="navigation_bar_size_28_dp">28 dp</string>
+    <string name="navigation_bar_size_24_dp">24 dp</string>
+    <string name="navigation_bar_size_20_dp">20 dp</string>
+    <string name="navigation_bar_size_0_dp">0 dp (off)</string>
+</resources>
